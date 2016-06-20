@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: local('DS-Digital'), url(digital.ttf) format('truetype');
+    unicode-range: U+0030—003A;
+}
+#timer {
+    font-family: 'DS-Digital', monospace;
+}
+header,
+article,
+aside,
+#timer,
+#tuning,
+#camera {
+    background: black;
+    color: aqua;
+}
+button {
+    border-color: aqua;
+    color: aqua;
+}
+svg * {
+    stroke: aqua;
+    fill: black;
+}
+text {
+    fill: aqua;
+}
+#gyro {
+    border: solid 2px aqua;
+}
+#exampleButton {
+    border: solid 4px aqua;
+}

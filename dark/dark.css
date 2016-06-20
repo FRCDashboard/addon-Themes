@@ -1,0 +1,26 @@
+header,
+article,
+aside,
+#timer,
+#tuning,
+#camera {
+    background: #222;
+    color: white;
+}
+button {
+    border-color: white;
+    color: white;
+}
+svg * {
+    stroke: white;
+    fill: #222;
+}
+text {
+    fill: aqua;
+}
+#gyro {
+    border: solid 2px white;
+}
+#exampleButton {
+    border: solid 4px white;
+}
