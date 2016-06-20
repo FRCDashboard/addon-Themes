@@ -1,6 +1,8 @@
 # FRC Dashboard Themes
 Several easily configurable themes for your dashboard.
 
+__These themes have been merged into the default install, so this repository is now OBSOLETE.__
+
 ## Installation
 1. Clone or download this repository.
 2. Copy or move the theme you choose into your dashboard directory.

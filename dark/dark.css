@@ -16,11 +16,11 @@ svg * {
     fill: #222;
 }
 text {
-    fill: aqua;
+    fill: white;
 }
 #gyro {
     border: solid 2px white;
 }
-#exampleButton {
+#example-button {
     border: solid 4px white;
 }
