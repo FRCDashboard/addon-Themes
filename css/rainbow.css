@@ -17,9 +17,6 @@ text {
     stroke: none;
     animation: fadeFill 5s infinite linear;
 }
-input[type="checkbox"] {
-    animation: fadeHue 5s infinite linear;
-}
 @keyframes fade {
     0% {
         color: #e81e1e;
@@ -61,8 +58,4 @@ input[type="checkbox"] {
     60% { fill: #49f130; }
     80% { fill: #18b5ee; }
     100% { fill: #e81e1e; }
-}
-@keyframes fadeHue {
-    0% { -webkit-filter: hue-rotate(90deg); }
-    100% { -webkit-filter: hue-rotate(450deg); }
 }
