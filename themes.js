@@ -19,7 +19,7 @@
 
 // Put at bottom with other listeners
 
-// When alliance selection is made, turn on that colored theme and hide alliance selector
+// When theme selection is made, turn on that theme
 ui.theme.select.onchange = function() {
     NetworkTables.setValue('/SmartDashboard/theme', this.value);
 };
