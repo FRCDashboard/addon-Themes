@@ -1,25 +1,16 @@
-// Put in major object at top
+// Create an alias for theme-related DOM objects
+ui.theme = {
+    select: document.getElementById('theme-select'),
+    link: document.getElementById('theme-link')
+};
 
-    ,
-    theme: {
-        select: document.getElementById('theme-select'),
-        link: document.getElementById('theme-link')
-    }
-
-
-
-// Put in onValueChanged switch statement
-
-        case '/SmartDashboard/theme':
-            ui.theme.select.value = value;
-            ui.theme.link.href = 'css/' + value + '.css';
-            break;
-
-
-
-// Put at bottom with other listeners
+// Listen for a theme change
+NetworkTables.addKeyListener('/SmartDashboard/theme', (key, value) => {
+    ui.theme.select.value = value;
+    ui.theme.link.href = 'css/' + value + '.css';
+});
 
 // When theme selection is made, turn on that theme
-ui.theme.select.onchange = function() {
+ui.theme.select.onchange = () => {
     NetworkTables.setValue('/SmartDashboard/theme', this.value);
 };

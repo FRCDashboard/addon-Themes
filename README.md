@@ -3,9 +3,17 @@ This addon adds a select box to choose the theme of your dashboard. You can choo
 
 ## Installation
 1. Copy the contents of `themes.html` to where the comments above the portions of the document say they should go.
-2. Copy the contents of the folder `css` to the already-existing directory of the same name.
-3. Copy the sections of `themes.js` to where the comments above each section say they should go.
-4. You're done! You are invited to modify the CSS of these themes or add your own. If you change or create something you think could benefit others, feel free to open a pull request on this repository.
+2. Copy `themes.js` into the `components` directory of your FRCDashboard system.
+3. Link the script from `index.html`, for example:
+
+```html
+<script src="components/themes.js"></script>
+```
+
+4. Copy all stylesheets in `css` into the `css` directory of your FRCDashboard system.
+5. If necessary, change the keys of the NetworkTables values used in `multicamera.js` to the keys your robot code uses.
+
+Alternatively, you could just copy all the JavaScipt code into `ui.js` or other preexisting JavaScript script, but that's a bit tougher to keep organized.
 
 ## Examples
 ### Red Alliance
